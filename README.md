@@ -1,5 +1,6 @@
 # ASP.NET-MVC5-Template
 This is an ASP.NET MVC 5 back-end practice
+
 Contains CRUD operations inside admin-panel, to control content of "Blog", "Property" and "Image" pages
 
 ## Preview
