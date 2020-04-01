@@ -1,0 +1,55 @@
+﻿@using WebApp.Models
+@using WebApp.Services
+
+@{
+    DatabaseRepository<Image> imageTable = new DatabaseRepository<Image>(new DB());
+    var records = imageTable.Read();
+}
+
+<div class="right_col" role="main">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Image Details <small>Delete or add new records to Image table</small></h2>
+            <a href="/admin/Image/CreateRecord" class="nav navbar-right"><i class="fa fa-plus"></i></a>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Image</th>
+                        <th>Setings</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in records)
+                    {
+                        <tr>
+                            <th scope="row">@item.Id</th>
+                            <td>@item.title</td>
+                            @if (item.imageUrl != null)
+                            {
+                                <td><img src="@Url.Content(item.imageUrl)" style="width:200px; height:140px" /></td>
+                            }
+
+                            <td>
+                                <input type="checkbox" title="status" name="st" id="st" class="flat" checked="@item.status">
+                                &nbsp;
+                                <a href="/admin/Image/CreateRecord/@item.Id" title="Edit"><i class="fa fa-wrench"></i></a>
+                                &nbsp;
+                                <a href="/admin/Image/DeleteRecord/@item.Id" title="Delete"><i class="fa fa-close"></i></a>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>

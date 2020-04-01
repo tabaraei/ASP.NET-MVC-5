@@ -1,0 +1,84 @@
+﻿@using WebApp.Services
+@using WebApp.Models
+
+@{
+    ViewData["Title"] = "Operations";
+    DatabaseRepository<User> userTable = new DatabaseRepository<User>(new DB());
+    var result = (ViewData["UserId"] == null) ? new User() : userTable.Read(Convert.ToInt32(ViewData["UserId"]));
+
+    DatabaseRepository<Role> roleTable = new DatabaseRepository<Role>(new DB());
+    var roles = roleTable.Read();
+}
+
+<div class="right_col" role="main">
+    <div class="x_panel">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Edit or Create <small>ha haaaaa</small></h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <br />
+                        <form method="post" action="/admin/User/createRecord" enctype="multipart/form-data" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                            <input type="hidden" id="Id" name="Id" value="@result.Id" />
+
+                            <!-- username -->
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="username">
+                                    username <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="username" name="username" required="required" class="form-control col-md-7 col-xs-12" value="@result.username">
+                                </div>
+                            </div>
+
+                            <!-- password -->
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="password">
+                                    password <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="password" id="password" name="password" required="required" class="form-control col-md-7 col-xs-12" value="@result.password">
+                                </div>
+                            </div>
+
+                            <!-- path -->
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">
+                                    Path <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12" value="@result.email">
+                                </div>
+                            </div>
+
+                            <!-- roles -->
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Role</label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <select class="form-control" name="roleId">
+                                        @foreach (var item in roles)
+                                        {
+                                            <option value="@item.Id">@item.roleName</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="form-group">
+                                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                    <button class="btn btn-primary" type="reset">Reset</button>
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

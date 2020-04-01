@@ -1,0 +1,174 @@
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\ApplicationInsights.config
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\roslyn\csc.exe
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\roslyn\System.Collections.Immutable.dll
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\roslyn\vbc.exe
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\roslyn\VBCSCompiler.exe
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\roslyn\VBCSCompiler.exe.config
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\WebApp.dll.config
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\WebApp.dll
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\WebApp.pdb
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\Microsoft.AI.Web.xml
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\Microsoft.AI.WindowsServer.xml
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\Microsoft.ApplicationInsights.xml
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\System.Web.Razor.xml
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\System.Web.Webpages.xml
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\System.Web.Webpages.Deployment.xml
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\System.Web.Webpages.Razor.xml
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\System.Web.Helpers.xml
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\System.Web.Mvc.xml
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\obj\Debug\WebApp.dll
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\obj\Debug\WebApp.pdb
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\Antlr3.Runtime.dll
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\Newtonsoft.Json.dll
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\System.Web.Optimization.dll
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\WebGrease.dll
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\Antlr3.Runtime.pdb
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\Newtonsoft.Json.xml
+c:\users\ali\documents\visual studio 2015\Projects\WebApp\WebApp\bin\System.Web.Optimization.xml
+C:\Users\ALI\documents\visual studio 2015\Projects\WebApp\WebApp\bin\EntityFramework.dll
+C:\Users\ALI\documents\visual studio 2015\Projects\WebApp\WebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\ALI\documents\visual studio 2015\Projects\WebApp\WebApp\bin\EntityFramework.xml
+C:\Users\ALI\documents\visual studio 2015\Projects\WebApp\WebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\ApplicationInsights.config
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\roslyn\csc.exe
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\roslyn\vbc.exe
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\WebApp.dll.config
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\WebApp.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\WebApp.pdb
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\Antlr3.Runtime.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\EntityFramework.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\Newtonsoft.Json.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\System.Web.Optimization.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\WebGrease.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\Antlr3.Runtime.pdb
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\EntityFramework.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\Microsoft.AI.Web.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\Newtonsoft.Json.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\System.Web.Optimization.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\System.Web.Razor.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\System.Web.Webpages.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\System.Web.Webpages.Razor.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\System.Web.Helpers.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\System.Web.Mvc.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\obj\Debug\WebApp.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\obj\Debug\WebApp.pdb
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\Validation.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy\WebApp\bin\Validation.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\obj\Debug\WebApp.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\obj\Debug\WebApp.pdb
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\ApplicationInsights.config
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\roslyn\csc.exe
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\roslyn\vbc.exe
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\WebApp.dll.config
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\WebApp.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\WebApp.pdb
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\Antlr3.Runtime.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\EntityFramework.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\Newtonsoft.Json.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\System.Web.Optimization.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\Validation.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\WebGrease.dll
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\Antlr3.Runtime.pdb
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\EntityFramework.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\Microsoft.AI.Web.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\Newtonsoft.Json.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\System.Web.Optimization.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\Validation.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\System.Web.Razor.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\System.Web.Webpages.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\System.Web.Webpages.Razor.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\System.Web.Helpers.xml
+C:\Users\ALI\Documents\Visual Studio 2015\Projects\WebApp - Copy - Copy\WebApp\bin\System.Web.Mvc.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\ApplicationInsights.config
+D:\Projects\ASP .NET\WebApp\WebApp\bin\roslyn\csc.exe
+D:\Projects\ASP .NET\WebApp\WebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\ASP .NET\WebApp\WebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\ASP .NET\WebApp\WebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\ASP .NET\WebApp\WebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\ASP .NET\WebApp\WebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\ASP .NET\WebApp\WebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\ASP .NET\WebApp\WebApp\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\ASP .NET\WebApp\WebApp\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\ASP .NET\WebApp\WebApp\bin\roslyn\vbc.exe
+D:\Projects\ASP .NET\WebApp\WebApp\bin\roslyn\VBCSCompiler.exe
+D:\Projects\ASP .NET\WebApp\WebApp\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\ASP .NET\WebApp\WebApp\bin\WebApp.dll.config
+D:\Projects\ASP .NET\WebApp\WebApp\bin\WebApp.dll
+D:\Projects\ASP .NET\WebApp\WebApp\bin\WebApp.pdb
+D:\Projects\ASP .NET\WebApp\WebApp\bin\Antlr3.Runtime.dll
+D:\Projects\ASP .NET\WebApp\WebApp\bin\EntityFramework.dll
+D:\Projects\ASP .NET\WebApp\WebApp\bin\EntityFramework.SqlServer.dll
+D:\Projects\ASP .NET\WebApp\WebApp\bin\Newtonsoft.Json.dll
+D:\Projects\ASP .NET\WebApp\WebApp\bin\System.Web.Optimization.dll
+D:\Projects\ASP .NET\WebApp\WebApp\bin\Validation.dll
+D:\Projects\ASP .NET\WebApp\WebApp\bin\WebGrease.dll
+D:\Projects\ASP .NET\WebApp\WebApp\bin\Antlr3.Runtime.pdb
+D:\Projects\ASP .NET\WebApp\WebApp\bin\EntityFramework.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\EntityFramework.SqlServer.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\Microsoft.AI.Web.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\Newtonsoft.Json.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\System.Web.Optimization.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\Validation.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\System.Web.Razor.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\System.Web.Webpages.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\System.Web.Webpages.Deployment.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\System.Web.Webpages.Razor.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\System.Web.Helpers.xml
+D:\Projects\ASP .NET\WebApp\WebApp\bin\System.Web.Mvc.xml
+D:\Projects\ASP .NET\WebApp\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+D:\Projects\ASP .NET\WebApp\WebApp\obj\Debug\WebApp.dll
+D:\Projects\ASP .NET\WebApp\WebApp\obj\Debug\WebApp.pdb

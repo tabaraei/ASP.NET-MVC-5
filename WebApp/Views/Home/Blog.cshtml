@@ -1,0 +1,67 @@
+﻿@using WebApp.Models
+@using WebApp.Services
+
+@{
+    ViewData["Title"] = "Blog";
+    ViewData["ImageViewHeader"] = "Our Blog";
+
+
+    // pagination
+    DatabaseRepository<Blog> blogTable = new DatabaseRepository<Blog>(new DB());
+    DatabaseRepository<Setting> settingTable = new DatabaseRepository<Setting>(new DB());
+    var blogs = blogTable.Read();
+    var settings = settingTable.Read(1);
+
+    int pageIndex = Convert.ToInt32(ViewData["pageIndex"]);
+    double pageSize = settings.blogCount, recordCount = blogs.Count();
+    var pagination = blogs.OrderByDescending(item => item.blogDate).Skip((pageIndex - 1) * Convert.ToInt32(pageSize)).Take(Convert.ToInt32(pageSize)).ToList();
+}
+
+@section Header{
+    @Html.Partial("_ImageView")
+}
+
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row d-flex">
+            @foreach (var item in pagination)
+            {
+                if (item.status == true)
+                {   
+                    <div class="col-md-3 d-flex ftco-animate">
+                        <div class="blog-entry justify-content-end">
+                            <div class="text">
+                                <a href="/BlogDetails/@item.Id">
+                                    <h3 class="heading">@item.title</h3>
+                                    <div class="meta mb-3">
+                                        <div>@item.blogDate</div>
+                                        <div>@item.author</div>
+                                        <div><span class="icon-chat"></span> 3</div>
+                                    </div>
+                                    <img src="@Url.Content(item.imageUrl)" class="block-20 img" />
+                                </a>
+                                <p>@item.description.Substring(0,100) ...</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+
+        <div class="row mt-5">
+            <div class="col text-center">
+                <div class="block-27">
+                    <ul>
+                        @*<li><a href="#">&lt;</a></li>*@
+                        @for (int i = 1; i <= Math.Ceiling(recordCount/pageSize); i++)
+                        {
+                            <li><a href="/Blog/@i">@i.ToString()</a></li>
+                        }
+                        @*<li><a href="#">&gt;</a></li>*@
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

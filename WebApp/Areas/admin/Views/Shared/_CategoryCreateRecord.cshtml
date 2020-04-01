@@ -1,0 +1,68 @@
+﻿@using WebApp.Services
+@using WebApp.Models
+
+@{
+    ViewData["Title"] = "Operations";
+    DatabaseRepository<Category> categoryTable = new DatabaseRepository<Category>(new DB());
+    var result = (ViewData["CategoryId"] == null) ? new Category() : categoryTable.Read(Convert.ToInt32(ViewData["CategoryId"]));
+}
+
+<div class="right_col" role="main">
+    <div class="x_panel">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Edit or Create <small>ha haaaaa</small></h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <br />
+                        <form method="post" action="/admin/Category/createRecord" enctype="multipart/form-data" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                            <input type="hidden" id="Id" name="Id" value="@result.Id" />
+
+                            <!-- title -->
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="title">
+                                    Title <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="title" name="title" required="required" class="form-control col-md-7 col-xs-12" value="@result.title">
+                                </div>
+                            </div>
+
+                            <!-- ParentID -->
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="parentId">
+                                    ParentId <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="parentId" name="parentId" required="required" class="form-control col-md-7 col-xs-12" value="@result.parentId">
+                                </div>
+                            </div>
+
+                            <!-- path -->
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="path">
+                                    Path <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="path" name="path" required="required" class="form-control col-md-7 col-xs-12" value="@result.path">
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="form-group">
+                                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                    <button class="btn btn-primary" type="reset">Reset</button>
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

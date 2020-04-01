@@ -1,0 +1,51 @@
+﻿@using WebApp.Models
+@using WebApp.Services
+
+@{
+    DatabaseRepository<Category> categoryTable = new DatabaseRepository<Category>(new DB());
+    var records = categoryTable.Read();
+}
+
+<div class="right_col" role="main">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Category Details <small>Edit, delete or add new records to Category table</small></h2>
+            <a href="/admin/Category/CreateRecord" class="nav navbar-right"><i class="fa fa-plus"></i></a>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>ParentID</th>
+                        <th>Path</th>
+                        <th>Setting</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in records)
+                    {
+                        <tr>
+                            <th scope="row">@item.Id</th>
+                            <td>@item.title</td>
+                            <td>@item.parentId</td>
+                            <td>@item.path</td>
+                            <td>
+                                <a href="/admin/Category/CreateRecord/@item.Id" title="Edit"><i class="fa fa-wrench"></i></a>
+                                &nbsp;
+                                <a href="/admin/Category/DeleteRecord/@item.Id" title="Delete"><i class="fa fa-close"></i></a>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>

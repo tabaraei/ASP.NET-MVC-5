@@ -1,0 +1,49 @@
+﻿@using WebApp.Models
+@using WebApp.Services
+
+@{
+    DatabaseRepository<Comment> commentTable = new DatabaseRepository<Comment>(new DB());
+    var records = commentTable.Read();
+}
+
+<div class="right_col" role="main">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Comment Details <small>Add new records to Comment table</small></h2>
+            <a href="/admin/Comment/CreateRecord" class="nav navbar-right"><i class="fa fa-plus"></i></a>
+            <div class="clearfix"></div>
+        </div>
+        <ul class="messages row">
+            @foreach (var item in records)
+            {
+                <li>
+                    @if (item.imageUrl != null)
+                {
+                        <img src="@Url.Content(item.imageUrl)" class="avatar" alt="Avatar">
+                    }
+                    
+
+                    <div class="message_date">
+                        <h3 class="date text-info">24</h3>
+                        <p class="month">May</p>
+                    </div>
+                    <div class="message_wrapper">
+                        <h4 class="heading">@item.username</h4>
+                        <div>
+                            <a href="/admin/Comment/CreateRecord/@item.Id" title="Edit"><i class="fa fa-wrench"></i></a>
+                            &nbsp;
+                            <a href="/admin/Comment/DeleteRecord/@item.Id" title="Delete"><i class="fa fa-close"></i></a>
+                            &nbsp;
+                            <!-- checkbox -->
+                            <div class="checkbox">
+                                <input type="checkbox" name="st" id="st" class="flat" checked="@item.status" >
+                            </div>
+                        </div>
+                        <blockquote class="message">@item.description</blockquote>
+                        <br />
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

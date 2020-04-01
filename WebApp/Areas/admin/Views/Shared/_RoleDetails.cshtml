@@ -1,0 +1,47 @@
+﻿
+@using WebApp.Models
+@using WebApp.Services
+
+@{
+    DatabaseRepository<Role> roleTable = new DatabaseRepository<Role>(new DB());
+    var records = roleTable.Read();
+}
+
+<div class="right_col" role="main">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Role Details <small>Edit, delete or add new records to Role table</small></h2>
+            <a href="/admin/Role/CreateRecord" class="nav navbar-right"><i class="fa fa-plus"></i></a>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>RoleName</th>
+                        <th>Setting</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in records)
+                    {
+                        <tr>
+                            <th scope="row">@item.Id</th>
+                            <td>@item.roleName</td>
+                            <td>
+                                <a href="/admin/Role/CreateRecord/@item.Id" title="Edit"><i class="fa fa-wrench"></i></a>
+                                &nbsp;
+                                <a href="/admin/Role/DeleteRecord/@item.Id" title="Delete"><i class="fa fa-close"></i></a>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>

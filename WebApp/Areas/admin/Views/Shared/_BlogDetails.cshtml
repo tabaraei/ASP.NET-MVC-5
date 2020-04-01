@@ -1,0 +1,67 @@
+﻿@using WebApp.Models
+@using WebApp.Services
+
+@{
+    DatabaseRepository<Blog> blogTable = new DatabaseRepository<Blog>(new DB());
+    var records = blogTable.Read();
+}
+
+<div class="right_col" role="main">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Blog Details <small>Edit, delete or add new records to Blog table</small></h2>
+            <a href="/admin/Blog/CreateRecord" class="nav navbar-right"><i class="fa fa-plus"></i></a>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>BlogDate</th>
+                        <th>Category</th>
+                        <th>Author</th>
+                        <th class="col-md-5">Description</th>
+                        <th>Image</th>
+                        <th>Settings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                @foreach (var item in records)
+                {
+                    <tr>
+                        <th scope="row">@item.Id</th>
+                        <td>@item.title</td>
+                        <td>@item.blogDate</td>
+                        <td>@item.categoryId</td>
+                        <td>@item.author</td>
+                        <td>@item.description</td>
+                        
+                         
+                        @if (item.imageUrl != null)
+                        {
+                            <td class="justify-content-center">
+                                <img src="@Url.Content(item.imageUrl)" style="width:100px; height:70px" />
+                            </td>
+                        }
+                               
+                        
+                        <td>
+                            <input type="checkbox" title="status" name="st" id="st" class="flat" checked="@item.status">
+                            &nbsp;
+                            <a href="/admin/Blog/CreateRecord/@item.Id" title="Edit"><i class="fa fa-wrench"></i></a>
+                            &nbsp;
+                            <a href="/admin/Blog/DeleteRecord/@item.Id" title="Delete"><i class="fa fa-close"></i></a>
+                        </td>
+                    </tr>
+                }
+                    
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>

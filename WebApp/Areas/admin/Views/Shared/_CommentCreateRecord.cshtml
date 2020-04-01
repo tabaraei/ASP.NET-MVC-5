@@ -1,0 +1,86 @@
+﻿@using WebApp.Services
+@using WebApp.Models
+
+@{
+    ViewData["Title"] = "Operations";
+    DatabaseRepository<Comment> commentTable = new DatabaseRepository<Comment>(new DB());
+    var result = (ViewData["CommentID"] == null) ? new Comment() : commentTable.Read(Convert.ToInt32(ViewData["CommentID"]));
+}
+
+<div class="right_col" role="main">
+    <div class="x_panel">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Edit or Create <small>ha haaaaa</small></h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <br />
+                        <form method="post" action="/admin/Comment/createRecord" enctype="multipart/form-data" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                            <input type="hidden" id="Id" name="Id" value="@result.Id" />
+                            <input type="hidden" id="oldUrl" name="oldUrl" value="@result.imageUrl" />
+
+                            <!-- username -->
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="username">
+                                    Title <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="username" name="username" required="required" class="form-control col-md-7 col-xs-12" value="@result.username">
+                                </div>
+                            </div>
+
+                            <!-- Description -->
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="description">
+                                    Description <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <textarea id="description" name="description" required="required" class="form-control col-md-7 col-xs-12">@result.description</textarea>
+                                </div>
+                            </div>
+
+                            <!-- checkbox -->
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="st">
+                                    Visibility <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="st" id="st" class="flat" checked="@result.status" >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Image -->
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="imageUrl">
+                                    Image <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    @if (result.imageUrl != null)
+                                    {
+                                        <img src="@Url.Content(result.imageUrl)" style="width:100px; height:70px" />
+                                    }
+                                    <input type="file" id="imageUrl" name="imageUrl" class="form-control col-md-7 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="ln_solid"></div>
+
+                            <!-- Submit -->
+                            <div class="form-group">
+                                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                    <button class="btn btn-primary" type="reset">Reset</button>
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

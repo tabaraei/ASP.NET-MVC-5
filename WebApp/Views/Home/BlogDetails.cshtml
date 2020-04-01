@@ -1,0 +1,13 @@
+﻿@using WebApp.Models
+@using WebApp.Services
+
+@{
+    ViewData["Title"] = "Blog Details";
+    ViewData["ImageViewHeader"] = "Blog";
+}
+
+@section Header{
+    @Html.Partial("_ImageView")
+}
+
+@Html.Partial("_BlogDetails")

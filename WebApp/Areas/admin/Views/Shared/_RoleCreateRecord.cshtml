@@ -1,0 +1,49 @@
+﻿
+@using WebApp.Services
+@using WebApp.Models
+
+@{
+    ViewData["Title"] = "Operations";
+    DatabaseRepository<Role> roleTable = new DatabaseRepository<Role>(new DB());
+    var result = (ViewData["RoleId"] == null) ? new Role() : roleTable.Read(Convert.ToInt32(ViewData["RoleId"]));
+}
+
+<div class="right_col" role="main">
+    <div class="x_panel">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Edit or Create <small>ha haaaaa</small></h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <br />
+                        <form method="post" action="/admin/Role/createRecord" enctype="multipart/form-data" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                            <input type="hidden" id="Id" name="Id" value="@result.Id" />
+
+                            <!-- title -->
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="roleName">
+                                    Role Name <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="roleName" name="roleName" required="required" class="form-control col-md-7 col-xs-12" value="@result.roleName">
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="form-group">
+                                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                    <button class="btn btn-primary" type="reset">Reset</button>
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

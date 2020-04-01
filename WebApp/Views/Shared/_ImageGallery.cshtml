@@ -1,0 +1,57 @@
+﻿@using WebApp.Models
+@using WebApp.Services
+
+@{
+    DatabaseRepository<Image> imageTable = new DatabaseRepository<Image>(new DB());
+    var result = imageTable.Read();
+
+    // pagination
+    DatabaseRepository<Setting> settingTable = new DatabaseRepository<Setting>(new DB());
+    // var settings = settingTable.Read(1);
+
+    int pageIndex = Convert.ToInt32(ViewData["GalleryIndex"]);
+    // double pageSize = settings.blogCount, recordCount = result.Count();
+    double pageSize = 4, recordCount = result.Count();
+    var pagination = result.OrderByDescending(item => item.Id).Skip((pageIndex - 1) * Convert.ToInt32(pageSize)).Take(Convert.ToInt32(pageSize)).ToList();
+}
+
+
+<section class="ftco-section ftco-no-pb">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                <span class="subheading">Image Gallery</span>
+                <h2 class="mb-2">Images are all here!</h2>
+            </div>
+        </div>
+        <div class="row d-flex">
+            @foreach (var item in pagination)
+            {
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block text-center">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img style="width:200px;height:140px" src="@Url.Content(item.imageUrl)" alt="Alternate Text" />
+                        </div>
+                        <div class="media-body py-md-4">
+                            <p>@item.title</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <div class="block-27">
+                    <ul>
+                        @*<li><a href="#">&lt;</a></li>*@
+                        @for (int i = 1; i <= Math.Ceiling(recordCount / pageSize); i++)
+                        {
+                            <li><a href="/Gallery/@i">@i.ToString()</a></li>
+                        }
+                        @*<li><a href="#">&gt;</a></li>*@
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,147 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Login Page</title>
+
+    <!-- Bootstrap -->
+    <link href="/Areas/admin/scripts/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="/Areas/admin/scripts/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="/Areas/admin/scripts/vendors/nprogress/nprogress.css" rel="stylesheet">
+
+    <!-- iCheck -->
+    <link href="/Areas/admin/scripts/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="/Areas/admin/scripts/build/css/custom.min.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="/Areas/admin/scripts/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/Areas/admin/scripts/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="/Areas/admin/scripts/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="/Areas/admin/scripts/vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="/Areas/admin/scripts/vendors/iCheck/icheck.min.js"></script>
+
+    <script src="/Areas/admin/scripts/build/js/custom.min.js"></script>
+
+    <!-- Animate.css -->
+    <link href="/Areas/admin/scripts/vendors/animate.css/animate.min.css" rel="stylesheet">
+
+</head>
+
+<body class="login">
+    <div>
+        <a class="hiddenanchor" id="signup"></a>
+        <a class="hiddenanchor" id="signin"></a>
+
+        <div class="login_wrapper">
+            <div class="animate form login_form">
+                <section class="login_content">
+                    <form method="post" action="/Account/Login">
+                        <h1>Login Form</h1>
+                        <!-- username -->
+                        <div>
+                            <input type="text" name="username" class="form-control" placeholder="Username" required="" />
+                        </div>
+                        <!-- password -->
+                        <div>
+                            <input type="password" name="password" class="form-control" placeholder="Password" required="" />
+                        </div>
+                        
+                        <!-- checkbox -->
+                        <div class="form-group">
+                            <div class="checkbox" >Remember me  <input type="checkbox" name="remember" id="remember" class="flat"></div>
+                        </div>
+
+                        <!-- submit -->
+                        <div class="form-group mb-4 mt-4">
+                            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                <button class="btn btn-primary" type="reset">Reset</button>
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <br />
+                        <div class="separator">
+                            <p class="change_link">
+                                New to site?
+                                <a href="#signup" class="to_register"> Create Account </a>
+                            </p>
+
+                            <div class="clearfix"></div>
+                            <br />
+
+                            <div>
+                                <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+            <div id="register" class="animate form registration_form">
+                <section class="login_content">
+                    <form method="post" action="/Account/Signin">
+                        <h1>Create Account</h1>
+                        <!-- username -->
+                        <div>
+                            <input type="text" name="username" class="form-control" placeholder="Username" required="" />
+                        </div>
+                        <!-- email -->
+                        <div>
+                            <input type="email" name="email" class="form-control" placeholder="Email" required="" />
+                        </div>
+                        <!-- password -->
+                        <div>
+                            <input type="password" name="password" class="form-control" placeholder="Password" required="" />
+                        </div>
+
+                        <!-- submit -->
+                        <div class="form-group mb-4 mt-4">
+                            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                <button class="btn btn-primary" type="reset">Reset</button>
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <br />
+                        <div class="separator">
+                            <p class="change_link">
+                                Already a member ?
+                                <a href="#signin" class="to_register"> Log in </a>
+                            </p>
+
+                            <div class="clearfix"></div>
+                            <br />
+
+                            <div>
+                                <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
